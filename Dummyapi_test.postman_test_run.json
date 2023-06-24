@@ -1,0 +1,691 @@
+{
+	"id": "24e98209-81a0-43fc-a170-01e3b39afad5",
+	"name": "Dummyapi_test",
+	"timestamp": "2023-06-24T10:13:13.431Z",
+	"collection_id": "28024898-57cc551d-19b0-41ef-931d-d2abf6e4bc1b",
+	"folder_id": 0,
+	"environment_id": "28024898-56cd65e6-fc41-422c-a771-afc5456ece9f",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-06-24T10:13:05.030Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "5b93b251-5b48-4724-836d-6ec17360c93d",
+			"name": "get all users without authorization",
+			"url": "https://dummyapi.io/data/v1/user",
+			"time": 241,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status code is 403": true
+			},
+			"testPassFailCounts": {
+				"Status code is 403": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				241
+			],
+			"allTests": [
+				{
+					"Status code is 403": true
+				}
+			]
+		},
+		{
+			"id": "8b52480e-76e4-46f8-9237-6d3d769b2afc",
+			"name": "get all users",
+			"url": "https://dummyapi.io/data/v1/user",
+			"time": 380,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				380
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e2ac4156-4176-463a-a37f-03843b37db0c",
+			"name": "pagination 50 users",
+			"url": "https://dummyapi.io/data/v1/user?page=1&limit=50",
+			"time": 356,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response time is less than 800ms": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 800ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				356
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response time is less than 800ms": true
+				}
+			]
+		},
+		{
+			"id": "8936c8ad-01e0-485c-ad5b-f69a374032d7",
+			"name": "pagination 5 users",
+			"url": "https://dummyapi.io/data/v1/user?page=1&limit=5",
+			"time": 325,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				325
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d5a834f1-c2f3-437b-a46c-7931358089d2",
+			"name": "pagination 4 users",
+			"url": "https://dummyapi.io/data/v1/user?page=1&limit=4",
+			"time": 261,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				261
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7ae1dc8e-075a-4d1a-8128-1bb7070d9fab",
+			"name": "pagination 51 users",
+			"url": "https://dummyapi.io/data/v1/user?page=1&limit=51",
+			"time": 290,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c07b0a3c-e429-450d-97d6-4b5ae443bbe6",
+			"name": "Create users valid data",
+			"url": "https://dummyapi.io/data/v1/user/create",
+			"time": 338,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body matches string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body matches string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				338
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body matches string": true
+				}
+			]
+		},
+		{
+			"id": "38061763-e1e4-4a3a-92c4-c3fe2b1b7a0c",
+			"name": "Update users valid data",
+			"url": "https://dummyapi.io/data/v1/user/6496c1b590660f7ec6cbd33b",
+			"time": 266,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				266
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "64f76593-560d-49e4-ac60-919e23f14fd0",
+			"name": "get user after update",
+			"url": "https://dummyapi.io/data/v1/user/6496c1b590660f7ec6cbd33b",
+			"time": 294,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				294
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "53ea4cc0-c30f-459d-88e2-4e86796e0350",
+			"name": "Create users not valid data",
+			"url": "https://dummyapi.io/data/v1/user/create",
+			"time": 231,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				231
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "e62b60bd-43c5-455e-9364-1108b877329b",
+			"name": "update user not valid data",
+			"url": "https://dummyapi.io/data/v1/user/6496c1b590660f7ec6cbd33b",
+			"time": 320,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				320
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e72c9740-c37c-4786-b1a1-7ea4465edcb9",
+			"name": "Create post valid data",
+			"url": "https://dummyapi.io/data/v1/post/create",
+			"time": 324,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type is present": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				324
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type is present": true
+				}
+			]
+		},
+		{
+			"id": "0bc0ebc6-2195-4370-805a-e923b91c5f67",
+			"name": "Create post  not valid data",
+			"url": "https://dummyapi.io/data/v1/post/create",
+			"time": 322,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				322
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "4d5b915f-c5ed-4780-a8ca-dbbb760fef65",
+			"name": "get post",
+			"url": "https://dummyapi.io/data/v1/post/6496c1b790660f684fcbd34f",
+			"time": 323,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				323
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "64732e1f-6531-49d6-9389-ab74bba88ddb",
+			"name": "check post",
+			"url": "https://dummyapi.io/data/v1/post/6496c1b790660f684fcbd34f",
+			"time": 290,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				290
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0ad43edf-ec6b-4bef-bceb-4979f2acc3a3",
+			"name": "create comment",
+			"url": "https://dummyapi.io/data/v1/comment/create",
+			"time": 243,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				243
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "f95074ff-32d1-456f-9f81-77cd28892332",
+			"name": "check comment",
+			"url": "https://dummyapi.io/data/v1/user/6496c1b590660f7ec6cbd33b/comment",
+			"time": 260,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				260
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ec1ac7cf-ad31-43c6-870d-f2433bc2a439",
+			"name": "Delet comment",
+			"url": "https://dummyapi.io/data/v1/comment/null}",
+			"time": 217,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				217
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "cee1c72a-24c6-44ff-8058-e3e95ba430b7",
+			"name": "check comment after delete",
+			"url": "https://dummyapi.io/data/v1/user/null}/comment",
+			"time": 237,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				237
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "b2efc7d3-712e-4b74-b453-04360f088cc2",
+			"name": "Delete User",
+			"url": "https://dummyapi.io/data/v1/user/6496c1b590660f7ec6cbd33b",
+			"time": 271,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				271
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "89a0db81-5479-4a8b-98fa-129cbbc299a1",
+			"name": "check user after delete",
+			"url": "https://dummyapi.io/data/v1/user/6496c1b590660f7ec6cbd33b",
+			"time": 285,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				285
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 6074,
+	"collection": {
+		"requests": [
+			{
+				"id": "5b93b251-5b48-4724-836d-6ec17360c93d",
+				"method": "GET"
+			},
+			{
+				"id": "8b52480e-76e4-46f8-9237-6d3d769b2afc",
+				"method": "GET"
+			},
+			{
+				"id": "e2ac4156-4176-463a-a37f-03843b37db0c",
+				"method": "GET"
+			},
+			{
+				"id": "8936c8ad-01e0-485c-ad5b-f69a374032d7",
+				"method": "GET"
+			},
+			{
+				"id": "d5a834f1-c2f3-437b-a46c-7931358089d2",
+				"method": "GET"
+			},
+			{
+				"id": "7ae1dc8e-075a-4d1a-8128-1bb7070d9fab",
+				"method": "GET"
+			},
+			{
+				"id": "c07b0a3c-e429-450d-97d6-4b5ae443bbe6",
+				"method": "POST"
+			},
+			{
+				"id": "38061763-e1e4-4a3a-92c4-c3fe2b1b7a0c",
+				"method": "PUT"
+			},
+			{
+				"id": "64f76593-560d-49e4-ac60-919e23f14fd0",
+				"method": "GET"
+			},
+			{
+				"id": "53ea4cc0-c30f-459d-88e2-4e86796e0350",
+				"method": "POST"
+			},
+			{
+				"id": "e62b60bd-43c5-455e-9364-1108b877329b",
+				"method": "PUT"
+			},
+			{
+				"id": "e72c9740-c37c-4786-b1a1-7ea4465edcb9",
+				"method": "POST"
+			},
+			{
+				"id": "0bc0ebc6-2195-4370-805a-e923b91c5f67",
+				"method": "POST"
+			},
+			{
+				"id": "4d5b915f-c5ed-4780-a8ca-dbbb760fef65",
+				"method": "GET"
+			},
+			{
+				"id": "64732e1f-6531-49d6-9389-ab74bba88ddb",
+				"method": "GET"
+			},
+			{
+				"id": "0ad43edf-ec6b-4bef-bceb-4979f2acc3a3",
+				"method": "POST"
+			},
+			{
+				"id": "f95074ff-32d1-456f-9f81-77cd28892332",
+				"method": "GET"
+			},
+			{
+				"id": "ec1ac7cf-ad31-43c6-870d-f2433bc2a439",
+				"method": "DELETE"
+			},
+			{
+				"id": "cee1c72a-24c6-44ff-8058-e3e95ba430b7",
+				"method": "GET"
+			},
+			{
+				"id": "b2efc7d3-712e-4b74-b453-04360f088cc2",
+				"method": "DELETE"
+			},
+			{
+				"id": "89a0db81-5479-4a8b-98fa-129cbbc299a1",
+				"method": "GET"
+			}
+		]
+	}
+}
